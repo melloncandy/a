@@ -280,35 +280,31 @@
         </section>
 
        <!-- contact form (sleek minimal) -->
+<!-- contact form (Sleek & Netlify-Ready) -->
 <section class="my-40 max-w-3xl mx-auto w-full">
     <h2 class="text-4xl md:text-5xl font-bold mb-12 gold-text text-center">reserve a orbit</h2>
     
-    <!-- Added: name, method, netlify, and honeypot attributes -->
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="glass-card p-8 md:p-12 space-y-8">
-        
-        <!-- The Honeypot Trap (Hidden from users) -->
-        <p class="hidden" style="display:none">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-
+    <!-- Use 'netlify' attribute exactly as they showed -->
+    <form name="contact" method="POST" netlify class="glass-card p-8 md:p-12 space-y-8">
         <div>
-            <!-- Added: name="name" -->
-            <input type="text" name="name" placeholder="Name" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500">
+            <label class="block text-gray-400 mb-2">Name</label>
+            <input type="text" name="name" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500">
         </div>
         <div>
-            <!-- Added: name="email" -->
-            <input type="email" name="email" placeholder="Email" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500">
+            <label class="block text-gray-400 mb-2">Email</label>
+            <input type="email" name="email" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500">
         </div>
         <div>
-            <!-- Added: name="message" -->
-            <textarea name="message" rows="4" placeholder="Message" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500 resize-none"></textarea>
+            <label class="block text-gray-400 mb-2">Message</label>
+            <textarea name="message" rows="4" required class="w-full bg-transparent border-b border-gray-600 py-3 px-2 text-lg glow-input transition-all focus:border-[#D4AF37] text-white placeholder-gray-500 resize-none"></textarea>
         </div>
         <div class="text-center">
-            <!-- Changed: type="submit" so it actually sends the data -->
+            <!-- Ensure this is type="submit" -->
             <button type="submit" class="gold-border rounded-full px-12 py-4 gold-text font-semibold tracking-widest bg-black/30 backdrop-blur-sm hover:bg-[#D4AF37]/10 transition-all">send signal</button>
         </div>
     </form>
 </section>
+
 
 
         <!-- terminal easter egg (hidden by default) -->
